@@ -1,0 +1,31 @@
+{
+  "name": "@coutcout/tree-datastructure",
+  "version": "1.0.6",
+  "description": "This package can be used for creating a tree datastructure where a node can possess as many nodes as possible. This is a simple tree structure with only basics functions (getChilds/getParent).",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coutcout/tree-datastructure.git"
+  },
+  "keywords": [
+    "tree",
+    "datastructure",
+    "treenode",
+    "node"
+  ],
+  "author": "Valentin Couturier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coutcout/tree-datastructure/issues"
+  },
+  "homepage": "https://github.com/coutcout/tree-datastructure#readme",
+  "devDependencies": {
+    "typescript": "^3.5.1"
+  }
+}
