@@ -5,6 +5,8 @@ export class TreeNode<T> {
     private parent!: TreeNode<T>;
     private childs: TreeNode<T>[] = [];
 
+    static readonly GET_PARENT_RANGE_ERROR = "This tree doesn't have enough depth";
+
     constructor(value: T){
         this.value = value;
     }
@@ -17,13 +19,17 @@ export class TreeNode<T> {
         if(!level || level === 0){
             return this.parent;
         } else if (!this.parent){
-            throw new RangeError("This tree doesn't have enough depth");
+            throw new RangeError(TreeNode.GET_PARENT_RANGE_ERROR);
         }
 
         return this.parent.getParent(level - 1);
     }
 
 
+    /**
+     * This method return the list of all the current node children.
+     * @returns The list of the current node children
+     */
     getChilds(): TreeNode<T>[]{
         return this.childs;
     }

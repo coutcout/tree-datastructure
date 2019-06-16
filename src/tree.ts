@@ -16,6 +16,10 @@ export class Tree<T> {
         this.root = new TreeNode(value);
     }
 
+    /**
+     * This method return the tree root
+     * @returns The tree root
+     */
     getRoot(): TreeNode<T> {
         return this.root;
     }

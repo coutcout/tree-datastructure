@@ -32,7 +32,7 @@ let node11 = node1.addChild("Hi");
 let node2 = root.addChild("I'm the second child");
 
 let node3 = new TreeNode("Bye bye");
-root.addChild(node3);
+root.addChildTreeNode(node3);
 ```
 
 ### Result
