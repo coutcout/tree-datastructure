@@ -1,6 +1,8 @@
 # tree-datastructure
 
-![npm (scoped)](https://img.shields.io/npm/v/@coutcout/tree-datastructure.svg?style=flat-square)
+![npm](https://img.shields.io/npm/v/@coutcout/tree-datastructure.svg?style=flat-square)
+![NPM](https://img.shields.io/npm/l/@coutcout/tree-datastructure.svg?style=flat-square)
+[![Build Status](https://dev.azure.com/couturiervalentin/couturiervalentin/_apis/build/status/coutcout.tree-datastructure?branchName=master)](https://dev.azure.com/couturiervalentin/couturiervalentin/_build/latest?definitionId=1&branchName=master)
 
 This package allow creating simple tree datastructures.
 
