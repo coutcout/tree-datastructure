@@ -63,3 +63,5 @@ typings/
 out
 
 .vscode/
+
+test-results.xml
