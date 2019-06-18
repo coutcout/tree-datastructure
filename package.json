@@ -1,6 +1,6 @@
 {
   "name": "@coutcout/tree-datastructure",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "This package can be used for creating a tree datastructure where a node can possess as many nodes as possible. This is a simple tree structure with only basics functions (getChilds/getParent).",
   "main": "out/index.js",
   "types": "out/index.d.ts",
