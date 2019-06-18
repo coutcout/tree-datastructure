@@ -1,13 +1,14 @@
 {
   "name": "@coutcout/tree-datastructure",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "This package can be used for creating a tree datastructure where a node can possess as many nodes as possible. This is a simple tree structure with only basics functions (getChilds/getParent).",
   "main": "out/index.js",
   "types": "out/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha --require ts-node/register test/**/*.ts --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results.xml",
-    "postbuild": "npm run test"
+    "postbuild": "npm run test",
+    "postversion": "git add package.json package-lock.json && git commit -mv%npm_package_version%"
   },
   "repository": {
     "type": "git",
