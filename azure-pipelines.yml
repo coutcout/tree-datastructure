@@ -27,16 +27,16 @@ steps:
     testRunner: JUnit
     testResultsFiles: '**/test-results.xml'
 
-- script: |
-    npm pack
-  displayName: 'Packaging for realease'
-
 - task: CopyFiles@2
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
-    contents: '*.tgz' 
+    contents: |
+      *
+      out/**/*
+      src/**/*
+      test/**/*
     targetFolder: $(Build.ArtifactStagingDirectory)/npm
-  displayName: 'Copy npm package'
+  displayName: 'Copy npm source'
 
 - task: CopyFiles@2
   inputs:
